@@ -49,6 +49,27 @@ value := facades.Cache().Get("goravel", "default")
 err := facades.Queue().Job(&jobs.Test{}, []queue.Arg{}).Dispatch()
 ```
 
+## Run your application
+
+```
+git clone <this repository>
+cd <this repository>
+```
+
+For goravel
+
+```
+go mod tidy
+go run .
+```
+
+For inertia
+
+```
+bun install
+bun run dev
+```
+
 ## Documentation
 
 Online documentation [https://www.goravel.dev](https://www.goravel.dev)
@@ -61,9 +82,9 @@ Example [https://github.com/goravel/example](https://github.com/goravel/example)
 ## Main Function
 
 |                                                                                        |                                                                 |                                                                          |                                                                       |                                                                                |
-|----------------------------------------------------------------------------------------|-----------------------------------------------------------------|--------------------------------------------------------------------------|-----------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| -------------------------------------------------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------ | --------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
 | [Config](https://www.goravel.dev/getting-started/configuration.html)                   | [Http](https://www.goravel.dev/the-basics/routing.html)         | [Authentication](https://www.goravel.dev/security/authentication.html)   | [Authorization](https://www.goravel.dev/security/authorization.html)  | [Orm](https://www.goravel.dev/orm/getting-started.html)                        |
-| [Migrate](https://www.goravel.dev/database/migrations.html)                                 | [Logger](https://www.goravel.dev/the-basics/logging.html)       | [Cache](https://www.goravel.dev/digging-deeper/cache.html)               | [Grpc](https://www.goravel.dev/the-basics/grpc.html)                  | [Artisan Console](https://www.goravel.dev/digging-deeper/artisan-console.html) |
+| [Migrate](https://www.goravel.dev/database/migrations.html)                            | [Logger](https://www.goravel.dev/the-basics/logging.html)       | [Cache](https://www.goravel.dev/digging-deeper/cache.html)               | [Grpc](https://www.goravel.dev/the-basics/grpc.html)                  | [Artisan Console](https://www.goravel.dev/digging-deeper/artisan-console.html) |
 | [Task Scheduling](https://www.goravel.dev/digging-deeper/task-scheduling.html)         | [Queue](https://www.goravel.dev/digging-deeper/queues.html)     | [Event](https://www.goravel.dev/digging-deeper/event.html)               | [FileStorage](https://www.goravel.dev/digging-deeper/filesystem.html) | [Mail](https://www.goravel.dev/digging-deeper/mail.html)                       |
 | [Validation](https://www.goravel.dev/the-basics/validation.html)                       | [Mock](https://www.goravel.dev/testing/mock.html)               | [Hash](https://www.goravel.dev/security/hashing.html)                    | [Crypt](https://www.goravel.dev/security/encryption.html)             | [Carbon](https://www.goravel.dev/digging-deeper/helpers.html)                  |
 | [Package Development](https://www.goravel.dev/digging-deeper/package-development.html) | [Testing](https://www.goravel.dev/testing/getting-started.html) | [Localization](https://www.goravel.dev/digging-deeper/localization.html) | [Session](https://www.goravel.dev/the-basics/session.html)            |                                                                                |

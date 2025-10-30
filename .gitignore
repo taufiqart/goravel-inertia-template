@@ -4,3 +4,7 @@
 .env.*
 !.env.example
 storage/framework
+node_modules
+bun.lock
+package-lock.json
+resources/bootstrap

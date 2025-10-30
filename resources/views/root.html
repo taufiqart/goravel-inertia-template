@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Put here your styles, meta and other stuff -->
+    {{ .inertiaHead }}
+    <link rel="stylesheet" href='{{ vite "resources/css/app.css" }}'>
+</head>
+
+<body>
+    {{ .inertia }}
+    <script type="module" src='{{ vite "resources/js/app.js" }}'></script>
+</body>
+
+</html>

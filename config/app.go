@@ -121,6 +121,8 @@ func init() {
 			&providers.ValidationServiceProvider{},
 			&providers.DatabaseServiceProvider{},
 			&fiber.ServiceProvider{},
+			// Register Inertia Service Provider
+			&providers.InertiaServiceProvider{},
 		},
 	})
 }
